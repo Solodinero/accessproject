@@ -1,0 +1,163 @@
+*{
+    text-align: left;
+  }
+  p{
+    margin: 0 !important;
+  }
+  .slanted-box{
+    background-color: rgb(252, 252, 252);
+  }
+  .slanted-box .sub-box{
+    border-right: solid 1px #DEE2E6;
+    width:40%;
+
+  }
+  .glassmagic{
+    background-color: #A4C519;
+    padding:50px;
+    width: 100%;
+  
+  }
+  .expandcontain{
+    background-image: url('./images/LY0Ap3RHfeVU.png');     
+   }
+   .expandcontain:nth-of-type(2){
+    background-image: url('./images/QWppTnciHhE0.png');     
+   }
+   .expandcontain:nth-of-type(3){
+    background-image: url('./images/TM8TZk9jPgT3.png');     
+   }
+  .termlil{
+  background-color: #f1f1f1;
+  width: 80%;
+  padding: 6px;
+  margin: 35px;
+}
+.accessmorepersonal{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #F1F1F1;
+}
+#distractbox{
+  display: none;
+}
+.accessmoreword{
+  width: 100%;
+  background-color: #A4C519;
+  align-items: center;
+  
+}
+.accessmoreword p{
+  text-align: center;
+  width: 100%;
+}
+.accessmoreword h2{
+  text-align: center;
+}
+.accessmoregreen{
+    margin-top: 150px;
+}
+.accessmoregreen h3{
+    color: #fff;
+  }
+.paydaypersonal{
+  background: linear-gradient( to bottom, #EE7E01 40%, #EE7E01 40%, #f7a13f 65%, #e9b070 65%, #f3b56e 85%, #eec699 85%, #ecd9c2 100% );
+  ;
+  height: 45vh;
+  padding: 40px;
+}
+.eligibleloanamount h1{
+  color: #EE7E01;
+}
+.laptopaccessmore{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.communitywomen{
+  background-color: #85091B;
+  width: 50%;
+  height: 40vh;
+}
+.box::before,
+.box::after {
+  border-top: solid 5px #A4C519;
+}
+.box2::before,
+.box2::after {
+  border-bottom: solid 5px #A4C519;
+}
+.internet-banking-button {
+  background-color: #A4C519;
+}
+.securekid{
+  background-image: url('./images/sme-personal-img.png');
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 100px;
+}
+.securekidchild{
+backdrop-filter: blur(20px);
+background-color: rgba(255, 255, 255, 0.719);
+height: 50vh;
+padding: 50px;
+}
+.communitywomen{
+height: 50vh;
+padding: 20px;
+
+}
+.wno1{
+background-image: url('./images/banner-3.png');
+height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 80px;
+
+}
+.wmoveimg{
+transform: translate(70%, -70%);
+position: absolute;
+}
+.monthlysal{
+  background-color: #fff;
+  height: 30vh;
+  padding: 20px;
+}
+.monthlysal h3{
+  font-size: 19px;
+  text-align: center;
+  color: black;
+}
+.monthlysal div{
+  margin: auto;
+  width: fit-content;
+}
+.monthlysal div:nth-of-type(1){
+  background-color: #EE7E01;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+.monthlysal div:nth-of-type(2){
+  border: solid 4px #ffbb6d;
+  width: 90%;
+  border-radius: 15px;
+  transition: 0.5s border;
+}
+.monthlysal div:nth-of-type(2):hover{
+  border-color: #EE7E01;
+}
+.monthlysal div:nth-of-type(3){
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.monthlysal div:nth-of-type(3) h4{ 
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+}
