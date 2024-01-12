@@ -9,6 +9,9 @@
             overflow: hidden;
             /* padding-top: 9px; */
         }
+        .box2:hover{
+          background-color: #f1f1f1;
+        }
 
         .box::before,
         .box::after {
@@ -18,7 +21,7 @@
             left: -100%;
             width: 100%;
             /* height: 100%; */
-            border-top: solid 5px #EE7E01; 
+            border-top: solid 4px #EE7E01; 
             transition: left 0.5s ease; 
         }
 
@@ -31,8 +34,8 @@
         }
         .box2 {
             position: relative;
-            width: fit-content;
-            height: fit-content;
+            height: 50px;
+            padding: 50px 50px;
             overflow: hidden;
         }
 
@@ -44,7 +47,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            border-bottom: solid 5px #EE7E01;
+            border-bottom: solid 4px #EE7E01;
             transition: left 0.5s ease;
         }
 
@@ -56,8 +59,8 @@
             left: 100%;
         }
         #pageboss{
-          border-bottom:  5px solid #EE7E01; 
-          padding-bottom: 3px;
+          border-bottom:  4px solid #EE7E01; 
+          padding-bottom: 14px;
         }
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -95,7 +98,8 @@ header{
   
   .left-navigation a:hover {
     color: #EE7E01;
-    border-top: solid 5px#EE7E01;
+    /* border-top: solid 5px#EE7E01; */
+    text-decoration: none;
   }
   .left-navigation svg{
     width: 25px;
@@ -243,8 +247,9 @@ display: flex;
   
    .internet-banking-button {
    background-color: #EE7E01;
-   padding: 7px;
+   padding: 12px 7px;
     display: flex;
+    color: white;
   }
   .searchbtn{
     display: flex; 
@@ -253,6 +258,7 @@ display: flex;
     position: relative;
     overflow-x: hidden; 
     max-width: 26;
+    padding: 12px 0;
   }
   .internet-banking-button i{
     color: white;
@@ -274,7 +280,6 @@ display: flex;
  .searchbar{
   background-color: #f1f1f1;
   width: 50%;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -384,13 +389,11 @@ display: flex;
   transition: transform 0.1s ease-in-out; /* Adjust the duration (0.5s in this example) and easing function as needed */
 }
 
-.carousel-caption{
-  transform: translate(-40%, -150%);
-  color: white;
-  background-color: #3333331a;
-}
 .carousel-indicators{
-  transform: translate(-50%, -290%);
+  transform: translate(50%, 100%);
+}
+.btn{
+  border-radius: 0 !important;
 }
 
 .slanted-box {
@@ -513,6 +516,7 @@ text-align: center;
   display: flex;
   margin: auto;
   width: fit-content;
+  width: 100%;
 
 }
 .boxshow:hover .content >* {
@@ -539,7 +543,7 @@ span svg{
   margin: auto;
   color: white;
   background-color: #EEEEEE;
-  position: static;
+  /* position: static; */
   margin-bottom: 100px;
 
 }
@@ -560,6 +564,7 @@ span svg{
   background-color: #EE7E01;
   margin: auto;
   width: 400%;
+  height: 80vh;
 }
 
 .termlil{
@@ -608,13 +613,15 @@ span svg{
   margin: auto;
 }
 .glassmagic{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
   margin: auto;
-  width: 90em;
+  width: 90%;
 }
 .expandcontain{
-  width: 80%;
+  width: 30%;
+  margin: 10px;
   height: 350px;
   display: flex;
   align-items: last baseline;
@@ -637,6 +644,7 @@ span svg{
   overflow: hidden;
   transition: height 0.3s ease;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .expandable-container:hover {
@@ -698,14 +706,10 @@ span svg{
 .closa div:nth-of-type(1) p{
   width: 70%;
 }
-.slant-line{
-  background-color: #EE7E01;
-  width: 15px;
-  transform: translate(-780.8px, 0%) rotate(8.9deg);
-}
+
 .exploremore{
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
 
 }
@@ -740,8 +744,8 @@ span svg{
   margin-top: 200px;
 }
 .custom-box {
-  width: 200px;
-  height: 150px;
+  width: 200px !important;
+  height: 150px !important;
   border: 4px solid #CCD8E6;
   background-color: #fff;
   display: flex;
@@ -775,11 +779,15 @@ span svg{
   fill: #fff;
   font-size: 26px;
 }
+.nav-link{
+  color: #000;
+}
 
 .box-text {
   margin-top: 10px;
   transition: color 0.3s;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
     text-align: left;
 }
 
@@ -791,18 +799,19 @@ span svg{
 .customboxwrapper{
   height: fit-content;
   margin: 50px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-x: scroll;
 }
 .bluefooter{
   background-color: #114c8d;
   background-image: url('./accesshomepageimg/access-logo-bg.svg');
   background-position: 100%;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 90vh;
 }
 .bluefooter .bluefootwrap{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   padding: 50px;
 }
 .bluefooter div div ul li{
@@ -810,7 +819,7 @@ span svg{
   line-height: 30px;
 }
 .bluefootwrap div{
-  width: fit-content;
+  width: 100%;
 }
 .bluefooter div div ul li a{
   text-decoration: none;
@@ -826,30 +835,140 @@ span svg{
 
 }
 .contactbox{
-  width: 80%;
+  width: fit-content;
   margin: auto;
+  padding: 5px;
   border: solid 1px #87A5C6;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   color: white;
 }
 .contactbox div{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  /* border: solid 1px; */
+
 }
 .contactbox div p{
-  padding: 20px;
+  height: 40px;
+  width: fit-content;
 }
- @media screen and (max-width: 1342px){
-  .nav2  .menu li {
-    padding: 6px 12px;
+.contactbox div p{
+  padding: 10px;
+}
+#internet-banking-outline {
+  display: none;
+  margin: none;
+  font-size: 12px;
+  transform: translate(85%, 0%);
+}
+.footacc{
+  display: none;
+}
+.appearboss{
+  display: none;
+}
+.socialicon{
+  justify-content: space-between;
+  width: 40%;
+}
+#instloan{
+  background-color: #A4C519;
+  border: solid 3px #A4C519; 
+}
+.carousel-caption{
+  transform: translate(-20%, -140%);
+  font-size: 30px;
+}
+.carouselhead{
+  font-size: 37px;
+}
+.boxiamchild{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.boxiam{
+  width: 280px;
+  height: 230px;
+  position: relative;
+  background-size: cover;
+  transition: 0.5s;
+}
+.boxiam:nth-of-type(1){
+  background-image: url("./accesshomepageimg/iam_company_1.png");
+
+}
+.boxiam:nth-of-type(2){
+  background-image: url("./accesshomepageimg/iam_job_applicant.png");
+
+}
+.boxiam:nth-of-type(3){
+  background-image: url("./accesshomepageimg/iam_journalist.png");
+
+}
+.boxiam:nth-of-type(5){
+  background-image: url("./accesshomepageimg/iam_woman.png");
+
+}
+.boxiam:nth-of-type(4){
+  background-image: url("./accesshomepageimg/iam_teenager.png");
+
+}
+.boxiam:nth-of-type(6){
+  background-image: url("./accesshomepageimg/iam_entrepreneur.png");
+
+}
+.boxiam:nth-of-type(7){
+  background-image: url("./accesshomepageimg/iam_individual.png");
+
+}
+.boxiam:nth-of-type(8){
+  background-image: url("./accesshomepageimg/iam_investor.png");
+
+}
+.boxiam:hover {
+  background-position: center;
+  background-color: #ee7f0146; 
+  background-blend-mode: overlay; 
+}
+
+.boxiam .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: 0.5s;
+}
+
+.boxiam:hover .text {
+  bottom: 50%;
+  transform: translateY(-30%);
+}
+.boxiam:hover .accessmoreappear{
+  background-color: #EE7E01; 
+  color: white; 
+  display: flex; 
+  justify-content: space-between; 
+  padding: 10px; 
+  margin-top: 185px;
+}
+.accessmoreappear{
+  display: none;
+}
+ @media screen and (max-width: 1160px){
+  .nav-item {
+    font-size: 15px;
   }
  }
- @media screen and (max-width: 1228px){
-  .nav2  .menu li {
-    padding: 4px 8px;
+ @media screen and (max-width: 1130px){
+  .internet-banking-button{
+    width: 100%;
+  }
+  .internet-banking-button div{
+    font-size: 13px;
   }
  }
  @media screen and (max-width: 1174px) {
@@ -857,39 +976,110 @@ span svg{
     width: 24em;
   }
  }
- @media screen and (max-width: 1158px) {
-  .nav2  .menu li a{
-    font-size: 13px;
-  } 
+ @media screen and (max-width: 1199px) {
+  .slanted-box .sub-box:nth-of-type(4){
+    display: none;
+    
+
  }
- @media screen and (max-width: 1076px){
-  .nav2  .menu li {
-    padding: 1px 5px;
-  }
+ .slanted-box .sub-box{
+  width: 45%;
  }
- @media screen and (max-width: 1035px){
-  .searchbtn div:nth-of-type(1){
-    width: 30%;
-  }
-  .searchbtn{
-    margin-left: 1rem;
-  }
+ .contactbox{
+  grid-template-columns: repeat(2, 1fr);
+ }
+ .bluefooter{
+  height: 120vh;
 }
-@media screen and (max-width: 1030px){
-  .logo{
-    margin-left: 0;
+
+ }
+ @media screen and (max-width: 1107px){
+  #logo img{
+    width: 100px;
+  }
+ }
+ @media screen and (max-width: 1084px){
+  .nav-item{
+    font-size: 12px;
+  }
+  /* .custom-box:nth-of-type(6){
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 960px){
+  .slanted-box .sub-box:nth-of-type(3){
+    display: none;
+  }
+ .slanted-box .sub-box{
+  width: 60%;
+ }
+}
+@media screen and (max-width: 1000px){
+  .paydayloan{
+    flex-direction: column;
+    width: 100%;
+    height: 150vh;
+    margin: 0;
+    text-align: center;
+  }
+  .wrappayday{
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0;
+    height: 270vh;
+  }
+  .monthsal{
+    background-color: #EE7E01;
+    border-top: solid 3px white;
+    width: 90%;
+    margin: 0 !important;
+  }
+  .monthsal div{
+    margin: auto;
+  }
+  .eligibeloan{
+    width: 80% !important;
+    clip-path: none;
+    z-index: +3;
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+    margin: auto;
+
+  }
+  .eligibeloan{
+    transform: none;
+  }
+  .loancalc{
+    border: none;
   }
 }
 @media screen and (max-width: 1010px){
-  .internet-banking-button >*{
-    width: 10px;
-    margin: 2px;
-  }
   .searchbtn{
     width: 21em
   }
+  .expandcontain{
+    width: 50%;
+  }
+  .expandcontain:nth-of-type(3){
+    display: none;
+  }
 }
- @media screen and (max-width: 991px) {
+@media screen and (max-width: 991px){
+  .boxshow:nth-of-type(5){
+    display: none;
+  }
+}
+
+ @media screen and (max-width: 993px) {
+  .exploremore .doublerwrap{
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+  .doublercontain .rchildoverlay{
+    height: fit-content;
+    width: 32%;
+  }
   .left-navigation li{
     display: none;
   }
@@ -901,8 +1091,17 @@ span svg{
   .nav2 .menu{
     display: none;
   }
+  .footacc{
+    display: block;
+  }
+  #footlist{
+    display: none;
+  }
   .nav1{
     display: none;
+  }
+  #internet-banking-outline{
+    display: block;
   }
   #accnav{
     display: block;
@@ -928,7 +1127,71 @@ span svg{
     width: 40%;
     margin-left: 440px;
    }
-
+   .appearboss{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+   }
+   .contactbox{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   
+/* .custom-box {
+  width: 400px !important;
+  height: 300px !important;
+} */
   
+}
+@media screen and (max-width: 872px) {
+  /* .custom-box:nth-of-type(5){
+    display: none;
+  } */
+}
+@media screen and (max-width: 799px){
+  .boxshow:nth-of-type(4){
+    display: none;
+  }
+}
+@media screen and (max-width: 766px) {
+  #internet-banking-outline{
+    transform: translate(0, 0%);
+  }
+  .exploremore .doublerwrap{
+    width: 60%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .doublercontain .rchildoverlay{
+    height: fit-content;
+    width: 40%;
+  }
+  .closa{
+    flex-direction: column;
+  }
+  .closa div{
+    width: 100%;
+    clip-path: none;
+  }
+  .closa div:nth-child(1){
+    clip-path: none;
+    width: 100%;
+    height: 50vh;
+    border-bottom: solid 10px #EE7E01;
+    text-align: center;
+
+  }
+
+}
+
+@media screen and (max-width: 635px) {
+  /* .custom-box:nth-of-type(4){
+    display: none;
+  } */
+}
+@media screen and (max-width: 599px){
+  .boxshow:nth-of-type(3){
+    display: none;
+  }
 }
 

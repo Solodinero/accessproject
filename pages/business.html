@@ -15,11 +15,11 @@
     <style>
         .box::before,
         .box::after {
-            border-top: solid 5px #014086;
+            border-top: solid 4px #014086;
         }
         .box2::before,
         .box2::after {
-            border-bottom: solid 5px #014086;
+            border-bottom: solid 4px #014086;
         } 
         .glasscontain{
             margin: 0 !important;
@@ -62,6 +62,16 @@
         }
         .internet-banking-button {
           background-color: #014086;
+        }
+        .left-navigation a:hover {
+            color: #014086;
+                  }
+          .boxiam:hover {
+          background-color: #013f8657; 
+
+        }
+        .boxiam:hover .accessmoreappear{
+          background-color: #014086; 
         }
     </style>
 </head>
@@ -300,9 +310,10 @@
                <i class="fa-solid fa-lock"></i>Internet Banking
             </button>
           </div> -->
-          <nav class="navbar navbar-expand-lg bg-body-tertiary m-0 p-0">
+          <nav class="navbar navbar-expand-lg  m-0 p-0" style="background-color: white;   box-shadow: 0 5px 10px 0 #00000071;">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">                <img src="../accesshomepageimg/access-logo-2.png" alt="">
+              <a class="navbar-brand" href="../index.html" id="logo">                
+                <img src="../accesshomepageimg/access-logo-2.png" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -310,80 +321,208 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-0">
                   <li class="nav-item">
-                    <a class="nav-link activ box2" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link activ box2" aria-current="page" href="../index.html" >Home</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown box2" href="./personal.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Personal
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown" href="./business.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="pageboss" style="border-color: #014086;">
-                      Business
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown box2" href="./corporate.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Corporate
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./personal.html" >Personal</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./business.html" id="pageboss" style="border-color: #114c8d;">Business</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link box2" href="./corporate.html">Corporate</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link box2" href="#">Private</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link box2" href="#">Ways to bank</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link box2" href="#">Contact us</a>
+                    </li>
+                
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown box2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Private
+                    I am...
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu" style="transform: translate(-50%, 0%);">
+                      <div class="boxiamchild">
+                        <div class="boxiam">
+                          <div class="text">A COMPANY</div>
+                          <div class="accessmoreappear">
+                            <div>access more</div>
+                            <div>></div>
+                          </div>
+                        </div>
+                        <div class="boxiam">
+                          <div class="text">A JOB <br>APPLICANT</div>
+                          <div class="accessmoreappear">
+                            <div>access more</div>
+                            <div>></div>
+                          </div>
+                        </div>
+                        <div class="boxiam">
+                          <div class="text">A JOURNALIST</div>
+                          <div class="accessmoreappear">
+                            <div>access more</div>
+                            <div>></div>
+                          </div>
+                        </div>
+                        <div class="boxiam">
+                          <div class="text">A TEENAGER</div>
+                          <div class="accessmoreappear">
+                            <div><a href="./kids.html" style="text-decoration: none; color: white;">access more</a></div>
+                            <div>></div>
+                          </div>
+                        </div>
+                        <div class="boxiam">
+                          <div class="text">A WOMAN</div>
+                          <div class="accessmoreappear">
+                            <div>access more</div>
+                            <div>></div>
+                          </div>
+                        </div>
+                        <div class="boxiam">
+                          <div class="text">AN <br>ENTREPRENEUR</div>
+                          <div class="accessmoreappear">
+                            <div>access more</div>
+                            <div>></div>
+                          </div>
+                        </div>
+                        <div class="boxiam">
+                          <div class="text">AN INDIVIDUAL</div>
+                          <div class="accessmoreappear">
+                            <div>access more</div>
+                            <div>></div>
+                          </div>
+                        </div>
+                        <div class="boxiam">
+                          <div class="text">AN INVESTOR</div>
+                          <div class="accessmoreappear">
+                            <div>access more</div>
+                            <div>></div>
+                          </div>
+                        </div>
+                      </div>
                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown box2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Ways to bank
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link activ box2" aria-current="page" href="#">Contact us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link activ box2" aria-current="page" href="#">I am...</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2 w-50" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex" role="search" >
+                  <input class="form-control me-2 w-50" type="search" placeholder="Search" aria-label="Search" id="searchbar" style="padding: 24px;">
                   <div class="intbank">
-                    <button class="internet-banking-button">
-                      <i class="fa-solid fa-lock"></i>Internet Banking
+                    <button class="internet-banking-button" type="button" data-toggle="modal" data-target="#staticBackdrop" id="modaltrig">
+                      <i class="fa-solid fa-lock"></i><div>Internet Banking</div>
                     </button>
+                    <div>
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header" style="border: none;">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel"><svg style="margin: 15px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                              </svg>Internet Banking</h1>
+                              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="modalchild">
+                                  <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                  </svg>
+                                  <h6>Individual</h6>
+                                </div>
+                                <div>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="modalchild">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suitcase-lg" viewBox="0 0 16 16">
+                                      <path d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z"/>
+                                    </svg>
+                                    <h6>Business</h6>
+                                  </div>
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                                    </svg>
+                                  </div>
+                              </div>
+                              <img src="../accesshomepageimg/megabillionwin.jpg" alt="">
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div> 
+                    <style>
+                      .modal-body .modalchild{
+                        width: 90%;
+                        margin: auto;
+                        height: 50px;
+                        margin-bottom: 15px;
+                        display: flex ;
+                        justify-content: space-between;
+                      }
+                      .modalchild div:nth-of-type(1){
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        width: 70%;
+                      }
+                      .modal-body .modalchild:nth-of-type(1){
+                        background-color: #A4C519;
+                      }
+                      .modal-body .modalchild:nth-of-type(2){
+                        background-color: #114c8d;
+                        color: white;
+                      }
+                      .modalchild div:nth-child(2){
+                        margin: auto 10px;
+                      }
+                      .modal.fade .modal-dialog {
+                        transform: translateX(100%);
+                        transition: transform 0.3s ease-out;
+                        width: 300px;
+                      }
+          
+                      .modal.fade.show .modal-dialog {
+                        transform: translate(520px, -28px);
+                        
+                      }
+                      #modaltrig:hover .modal-dialog{
+                        display: block;
+                      }
+                      .modal-backdrop{
+                        z-index: -1;
+                      }
+                    </style>
+                  </div>
+                  
+                  
                        
                 </form>
               </div>
+              <button class="btn btn-outline-light" style="border: solid 2px #A4C519;color: #A4C519;" id="internet-banking-outline">
+                <i class="fa-solid fa-lock mx-2" style="color: #A4C519;"></i>Internet Banking
+               </button>
+               <div class="appearboss">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <div>
+                  Menu
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                </div>
+               </div>
+               
             </div>
           </nav> 
          </header>

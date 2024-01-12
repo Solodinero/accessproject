@@ -6,6 +6,7 @@
   }
   .slanted-box{
     background-color: rgb(252, 252, 252);
+    box-shadow: 0 5px 10px 0 #000000f5;
   }
   .slanted-box .sub-box{
     border-right: solid 1px #DEE2E6;
@@ -37,6 +38,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #F1F1F1;
+  padding: 70px;
 }
 #distractbox{
   display: none;
@@ -61,8 +63,7 @@
     color: #fff;
   }
 .paydaypersonal{
-  background: linear-gradient( to bottom, #EE7E01 40%, #EE7E01 40%, #f7a13f 65%, #e9b070 65%, #f3b56e 85%, #eec699 85%, #ecd9c2 100% );
-  ;
+  background: linear-gradient(to bottom, #EE7E01, #ee7f01b4, #ffffff00);
   height: 45vh;
   padding: 40px;
 }
@@ -73,44 +74,49 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.communitywomen{
-  background-color: #85091B;
-  width: 50%;
-  height: 40vh;
-}
+
 .box::before,
 .box::after {
-  border-top: solid 5px #A4C519;
+  border-top: solid 4px #A4C519;
 }
 .box2::before,
 .box2::after {
-  border-bottom: solid 5px #A4C519;
+  border-bottom: solid 4px #A4C519;
+}
+.left-navigation a:hover {
+  color: #A4C519;
 }
 .internet-banking-button {
   background-color: #A4C519;
 }
 .securekid{
   background-image: url('./images/sme-personal-img.png');
-  height: 70vh;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   padding: 100px;
+  margin-bottom: 70px;
 }
 .securekidchild{
 backdrop-filter: blur(20px);
 background-color: rgba(255, 255, 255, 0.719);
-height: 50vh;
+height: 300px;
 padding: 50px;
 }
+.securekidchild h4{
+  color: #A4C519;
+}
 .communitywomen{
-height: 50vh;
+height: 300px;
 padding: 20px;
+background-color: #85091B;
+width: 50%;
 
 }
 .wno1{
 background-image: url('./images/banner-3.png');
-height: 70vh;
+height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -160,4 +166,77 @@ position: absolute;
   font-size: 15px;
   font-weight: 500;
   margin-top: 15px;
+}
+.boxiam:hover {
+  background-color: #a3c51975; 
+
+}
+.boxiam:hover .accessmoreappear{
+  background-color: #A4C519; 
+}
+
+@media screen and (max-width: 991px){
+  .accessmorepersonal{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #distractbox{
+    display: block;
+  }
+  .laptopaccessmore{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .laptopaccessmore div:nth-child(1){
+    margin: auto;
+  }
+}
+.accessmorepersonal div:nth-of-type(3){
+  width: 100%;
+}
+@media screen and (max-width: 1263px){
+  .paydaypersonal h3{
+    font-size: 22px;
+  }
+  .monthlysal h3{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1077px){
+  .paydaypersonal h3{
+    font-size: 20px;
+  }
+  .monthlysal h3{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1018px){
+  .paydaypersonal h3{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1093px){
+  .securekidchild{
+    padding: 10px;
+  }
+  .communitywomen{
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 870px){
+  .accessmorepersonal{
+    grid-template-columns: 1fr;
+  }
+  .accessmorepersonal div:nth-of-type(3){
+    display: none;
+  }
+  .accessmorepersonal div:nth-of-type(4){
+    width: 70%;
+    margin: 50px auto;
+  }
+
+}
+@media screen and (max-width: 880px){
+  .communitywomen{
+    padding: none;
+    height: 350px;
+  }
 }
