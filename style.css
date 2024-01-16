@@ -390,7 +390,7 @@ display: flex;
 }
 
 .carousel-indicators{
-  transform: translate(50%, 100%);
+  transform: translate(50%, -50%);
 }
 .btn{
   border-radius: 0 !important;
@@ -479,7 +479,7 @@ text-align: center;
   background-color: rgba(0, 0, 0, 0.342); 
   background-blend-mode: overlay; 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
 }
 .boxshow:hover:nth-of-type(2) .overlay {
   background-image: url('./accesshomepageimg/mobile-banking.png');
@@ -552,6 +552,7 @@ span svg{
   text-align: center;
   border-right: solid 2px #DEE2E6;
   margin-top: 55px;
+
 }
 .loancalc h1{
   padding: 15px;
@@ -860,7 +861,7 @@ span svg{
   display: none;
   margin: none;
   font-size: 12px;
-  transform: translate(85%, 0%);
+  /* transform: translate(85%, 0%); */
 }
 .footacc{
   display: none;
@@ -877,7 +878,7 @@ span svg{
   border: solid 3px #A4C519; 
 }
 .carousel-caption{
-  transform: translate(-20%, -140%);
+  transform: translate(-10%, -110%);
   font-size: 30px;
 }
 .carouselhead{
@@ -958,6 +959,32 @@ span svg{
 .accessmoreappear{
   display: none;
 }
+.carousel-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-indicator li {
+  background-color: orange;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  animation: pulse 2s infinite alternate;
+}
+
+.carousel-indicator .active {
+  animation: none; /* Disable animation for the active dot */
+  background-color: white;
+}
+
+@keyframes pulse {
+  to {
+    background-color: white;
+  }
+}
  @media screen and (max-width: 1160px){
   .nav-item {
     font-size: 15px;
@@ -989,7 +1016,7 @@ span svg{
   grid-template-columns: repeat(2, 1fr);
  }
  .bluefooter{
-  height: 120vh;
+  height: fit-content;
 }
 
  }
@@ -1013,6 +1040,9 @@ span svg{
   }
  .slanted-box .sub-box{
   width: 60%;
+ }
+ .glassmagic{
+  overflow-x: scroll;
  }
 }
 @media screen and (max-width: 1000px){
@@ -1038,11 +1068,14 @@ span svg{
   .monthsal div{
     margin: auto;
   }
+  .money div{
+    margin-left: 500px;
+  }
   .eligibeloan{
     width: 80% !important;
     clip-path: none;
     z-index: +3;
-    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%); */
     margin: auto;
 
   }
@@ -1051,6 +1084,7 @@ span svg{
   }
   .loancalc{
     border: none;
+    margin: auto;
   }
 }
 @media screen and (max-width: 1010px){
@@ -1155,9 +1189,9 @@ span svg{
   }
 }
 @media screen and (max-width: 766px) {
-  #internet-banking-outline{
+  /* #internet-banking-outline{
     transform: translate(0, 0%);
-  }
+  } */
   .exploremore .doublerwrap{
     width: 60%;
     grid-template-columns: repeat(1, 1fr);
@@ -1193,5 +1227,26 @@ span svg{
   .boxshow:nth-of-type(3){
     display: none;
   }
+  .slanted-box .sub-box:nth-of-type(2){
+    display: none;
+    
+
+ }
+ .slanted-box .sub-box{
+  width: 100%;
+ }
+ .slanted-box{
+  clip-path: none;
+  box-shadow: none;
+}
 }
 
+@media screen and (max-width: 514px){
+  .boxshow:nth-of-type(3){
+    display: none;
+  }
+  /* #internet-banking-outline {
+    transform: translate(85%, 0%);
+  } */
+
+}

@@ -28,8 +28,8 @@
             background-image: url('./images/ezt8dGI73vsQ.png');
         }
         .cards{
-            display: flex;
-            justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             padding: 50px;
             background-color: #014086;
             height: 50vh
@@ -609,7 +609,7 @@
       
     </div>
 
-  <setion class="cards">
+  <setion class="cards" style="display: none;">
     <div class="cardchild">
         <div><img src="./images/offerings-card.png" alt=""></div>
         <div>
@@ -633,7 +633,7 @@
       <h4>Secure your kid’s future!</h4>
       <h2>Early Savers Account</h2>
       <p>Early savers is a savings account designed especially for children below the age of 18 years, including unborn children.</p>
-      <button>Acess more</button>
+      <button class="btn btn-dark " style="background-color: #ee7e01; border: none;">Acess more</button>
     </div>
     <div>
 
@@ -726,10 +726,131 @@
         </div>
       </footer>
       <footer class="bluefooter">
-        <div class="bluefootwrap">
+        <style>
+          .accordion-button::after{
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+          
+          }
+          .accordion-button:not(.collapsed)::after{
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="2006" height="2006" fill="white" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>')
+            
+          }
+          .accordion{
+            --bs-accordion-btn-bg:  #256bb600;
+            --bs-accordion-active-bg: #114d8d00;
+            --bs-accordion-btn-padding-x: 50px;
+            --bs-accordion-btn-padding-y: 25px;
+            --bs-accordion-btn-icon-width: 30px;
+            --bs-accordion-border-color: #114c8d;
+            --bs-accordion-btn-focus-border-color: none;
+            --bs-accordion-btn-focus-box-shadow: none;
+            --bs-accordion-bg: #114d8d;
+
+          }
+        </style>
+        <div class="accordion footacc" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapseTwo">
+                ABOUT US
+              </button>
+            </h2>
+            <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="#">Our History</a></li>
+                  <li><a href="#">Corporate Profile</a></li>
+                  <li><a href="#">Corporate Governance</a></li>
+                  <li><a href="#">Board and Management Team</a></li>
+                  <li><a href="">Corporate Philosophy</a></li>
+                  <li><a href="#">Our Awards</a></li>
+                  <li><a href="#">Our Businesses</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseThree">
+                CAREERS
+              </button>
+            </h2>
+            <div id="collapsethree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="#">Working At Access Bank</a></li>
+                  <li><a href="#">Your Career</a></li>
+                  <li><a href="#">Recruitment Process</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                CONTACT US
+              </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="">Agent Banking Details</a></li>
+                  <li><a href="">Biometrics Enrollment</a></li>
+                  <li><a href="">Branch & ATM Locator</a></li>
+                  <li><a href="">Branches With Wi-Fi</a></li>
+                  <li><a href="">My Access</a></li>
+                  <li><a href="">We Care</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                QUICK LINKS
+              </button>
+            </h2>
+            <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="">Access Online</a></li>
+                  <li><a href="">Anti-Money Laundering</a></li>
+                  <li><a href="">Support Center</a></li>
+                  <li><a href="">Download Center</a></li>
+                  <li><a href="">Form M Rates</a></li>
+                  <li><a href="">Online Security Tips</a></li>
+                  <li><a href="">Scam Alert</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">
+                YOU ARE...
+              </button>
+            </h2>
+            <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="">An Individual</a></li>
+                  <li><a href="">A Job Applicant</a></li>
+                  <li><a href="">A Woman</a></li>
+                  <li><a href="">A Company</a></li>
+                  <li><a href="">A Journalist</a></li>
+                  <li><a href="">A Teenager</a></li>
+                  <li><a href="">An Entrepreneur</a></li>
+                  <li><a href="">An Investor</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bluefootwrap" id="footlist">
           <div>
-            <h3>ABOUT US</h3>
+            
             <ul>
+              <li><h3>ABOUT US</h3></li>
               <li><a href="#">Our History</a></li>
               <li><a href="#">Corporate Profile</a></li>
               <li><a href="#">Corporate Governance</a></li>
@@ -740,16 +861,18 @@
             </ul>
           </div>
           <div>
-            <h3>CAREERS</h3>
+            
             <ul>
+              <li><h3>CAREERS</h3></li>
               <li><a href="#">Working At Access Bank</a></li>
               <li><a href="#">Your Career</a></li>
               <li><a href="#">Recruitment Process</a></li>
             </ul>
           </div>
           <div>
-            <h3>CONTACT US</h3>
+            
             <ul>
+              <li><h3>CONTACT US</h3></li>
               <li><a href="">Agent Banking Details</a></li>
               <li><a href="">Biometrics Enrollment</a></li>
               <li><a href="">Branch & ATM Locator</a></li>
@@ -760,8 +883,9 @@
           </div>
           
           <div>
-            <h3>QUICK LINKS</h3>
+            
             <ul>
+              <li><h3>QUICK LINKS</h3></li>
               <li><a href="">Access Online</a></li>
               <li><a href="">Anti-Money Laundering</a></li>
               <li><a href="">Support Center</a></li>
@@ -772,8 +896,9 @@
             </ul>
           </div>
           <div>
-            <h3>YOU ARE...</h3>
+            
             <ul>
+              <li><h3>YOU ARE...</h3></li>
               <li><a href="">An Individual</a></li>
               <li><a href="">A Job Applicant</a></li>
               <li><a href="">A Woman</a></li>
@@ -787,23 +912,36 @@
         </div>
         <div class="contactbox">
             <div class="call">
-              <i class="fa-solid fa-phone"></i>
-              <p>+ 1-2802500,
-                07003000000</p>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p>+ 1-2802500,
+                  07003000000</p>
+              </div>
             </div>
             <div class="mobileapps">
-              <p>Access Mobile Apps</p>
+              <div>
+                <p>Access Mobile Apps</p>
+              </div>
+             <div>
               <img src="./accesshomepageimg/get-it-on-appstore.png" alt="">
               <img src="./accesshomepageimg/get-it-on-playstore.png" alt="">
+             </div>
             </div>
             <div class="social">
-              <p>We're social:</p>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-square-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
+              <div>
+                <p>We're social:</p>
+              </div>
+              <div class="socialicon">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
         </div>
+        
       </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

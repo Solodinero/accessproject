@@ -100,8 +100,6 @@
             margin: 20px 0;
         }
         .gridmagicwrap{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
             background-image: url('./images/M1xbMf0bfskg.png');
             background-repeat: no-repeat;
             background-color: rgba(0, 0, 0, 0.616); 
@@ -117,6 +115,7 @@
         .gridmagicchild{
             border-right: solid 3px #EE7E01;
             width: 100%;
+            height: 90vh;
         }
         .lastcorporate{
             display: grid;
@@ -149,6 +148,13 @@
           .left-navigation a:hover {
             color: #014086;
           }
+          .boxiam:hover {
+          background-color: #114d8d57; 
+
+        }
+        .boxiam:hover .accessmoreappear{
+          background-color: #114c8d; 
+        }
     </style>
 </head>
 <body>
@@ -642,14 +648,14 @@
   </div>
 <section class="accessmoregreen" style="background-color: transparent;" > 
   <div class="accessmoreword"style="background-color: transparent;">
-   <div class="child">
+   <div class="chid">
     <h2>What are you interested in?</h2>
     <p>Trusted by businesses across the continent, the UK, and the UAE. Access our expertise at home and <br>abroad.</p>
    </div>
   </div>
   <div class="glassmagic" style="background-color: transparent; margin: auto !important; width: 80%;">
       
-      <div class="expandcontain"style="background-image: url('./images/MiLegJBoCT7M.png'); background-size: cover; background-repeat: no-repeat; width: 100%;">
+      <div class="expandcontain"style="background-image: url('./images/MiLegJBoCT7M.png'); background-size: cover; background-repeat: no-repeat; width: 100%; margin: none !important;">
         <div class="expandable-container"  style="background-color: transparent; backdrop-filter: none;">
           <div class="containerfun-icon"><img src="./accesshomepageimg/t-bills-online.svg" alt=""></div>
           <div class="containerfun-content">
@@ -717,34 +723,145 @@
     </div>
   </section>
   <section class="4gridmagic">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .parent-container {
+      position: relative;
+      width: 300px; /* Set the width as needed */
+      height: 200px; /* Set the height as needed */
+      background-image: url('default-background.jpg'); /* Default background image */
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .child {
+      position: absolute;
+      width: 50%; /* Set the width as needed */
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .child:hover {
+      transform: scale(1.1); /* Increase the size on hover if desired */
+    }
+
+    .child:nth-child(1) { left: 0; }
+    .child:nth-child(2) { left: 50%; }
+    .child:nth-child(3) { left: 0; top: 50%; }
+    .child:nth-child(4) { left: 50%; top: 50%; }
+
+    /* Change background images on hover */
+    .child:nth-child(1):hover ~ .parent-container { background-image: url('image1.jpg'); }
+    .child:nth-child(2):hover ~ .parent-container { background-image: url('image2.jpg'); }
+    .child:nth-child(3):hover ~ .parent-container { background-image: url('image3.jpg'); }
+    .child:nth-child(4):hover ~ .parent-container { background-image: url('image4.jpg'); }
+  </style>
+</head>
+<body>
+  <div class="parent-container">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+</body>
+</html>
+<style>
+.gridmagicwrap {
+  display: flex;
+  height: 100vh; /* Set the height of the container, adjust as needed */
+  background-color: #333; /* Set a background color, adjust as needed */
+  padding: 20px; /* Add padding as needed */
+  color: white;
+}
+
+.gridmagicchild {
+  margin-bottom: 20px; /* Add spacing between child elements */
+}
+
+.gridmagicchild a.btn {
+  background-color: #fff; /* Set the background color for the button */
+  color: #333; /* Set the text color for the button */
+  padding: 10px 15px; /* Adjust padding as needed */
+  text-decoration: none;
+}
+</style>
+
     <div class="gridmagicwrap">
-        <div class="gridmagicchild">
-            <h4></h4>
-            <p></p>
-            <button></button>
+      
+      <div class="expandcontain gridmagicchild"style="background-image: none; background-color: none; width: 100%; margin: none !important;">
+        <div class="expandable-container"  style="background-color: transparent; backdrop-filter: none;">
+
+          <div class="containerfun-content">
+            <div class="containerfun-header text-light">
+              <h5>Deeper Relationships</h5>
+              <p>Specialized knowledge and expertise to help you navigate the financial.</p>
+            </div>
+            <div class=" btn btn-light" id="containerfun-button">access more</div>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="expandcontain gridmagicchild"style="background-image: none; background-color: none; width: 100%; margin: none !important;">
+        <div class="expandable-container"  style="background-color: transparent; backdrop-filter: none;">
+
+          <div class="containerfun-content">
+            <div class="containerfun-header text-light">
+              <h5>Multiple Ways to Bank</h5>
+              <p>Short/Medium Term Facilities {IFF, Confirmation Lines, Usance, etc}, Local/International Trade</p>
+            </div>
+            <div class=" btn btn-light" id="containerfun-button">access more</div>
+          </div>
+        </div>
+      </div>
+    <div class="expandcontain gridmagicchild"style="background-image: none; background-color: none; width: 100%; margin: none !important;">
+        <div class="expandable-container"  style="background-color: transparent; backdrop-filter: none;">
+
+          <div class="containerfun-content">
+            <div class="containerfun-header text-light">
+              <h5>Multiple Ways to Bank</h5>
+              <p>Short/Medium Term Facilities {IFF, Confirmation Lines, Usance, etc}, Local/International Trade</p>
+            </div>
+            <div class=" btn btn-light" id="containerfun-button">access more</div>
+          </div>
+        </div>
+      </div>
+    <div class="expandcontain gridmagicchild"style="background-image: none; background-color: none; width: 100%; margin: none !important;">
+        <div class="expandable-container"  style="background-color: transparent; backdrop-filter: none;">
+
+          <div class="containerfun-content">
+            <div class="containerfun-header text-light">
+              <h5>A Path To Grow</h5>
+              <p>Short/Medium Term Facilities {IFF, Confirmation Lines, Usance, etc}, Local/International Trade</p>
+          </div>
+            <div class=" btn btn-light" id="containerfun-button">access more</div>
+          </div>
+        </div>
+      </div>
   </section>
   <section class="lastcorporate">
     <div class="lastword">
         <h2>Access More <br>
         Products & Services</h2>
         <p>We understand the complexity and evolving <br>needs of businesses in a wide range</p>
-        <button class="btn btn-outline-primary">access more</button>
+        <button class="btn btn-outline-primary" style="border: 1px #114c8d solid;">access more</button>
     </div>
     <div>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem; margin: 20px;">
             <img src="./images/treasury.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title text-primary">Treasury Services</h5>
+              <p class="card-text">Access Bank’s understanding of the local market and your unique needs allows us to work with you to accommodate your.</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 18rem; margin: 20px;">
             <img src="./images/financing_1.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title text-primary">Finanacing</h5>
+              <p class="card-text">Access Bank’s understanding of the local market and your unique needs allows us to work with you to accommodate your.</p>
             </div>
           </div>
     </div>
@@ -792,10 +909,131 @@
         </div>
       </footer>
       <footer class="bluefooter">
-        <div class="bluefootwrap">
+        <style>
+          .accordion-button::after{
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>');
+          
+          }
+          .accordion-button:not(.collapsed)::after{
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="2006" height="2006" fill="white" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>')
+            
+          }
+          .accordion{
+            --bs-accordion-btn-bg:  #256bb600;
+            --bs-accordion-active-bg: #114d8d00;
+            --bs-accordion-btn-padding-x: 50px;
+            --bs-accordion-btn-padding-y: 25px;
+            --bs-accordion-btn-icon-width: 30px;
+            --bs-accordion-border-color: #114c8d;
+            --bs-accordion-btn-focus-border-color: none;
+            --bs-accordion-btn-focus-box-shadow: none;
+            --bs-accordion-bg: #114d8d;
+
+          }
+        </style>
+        <div class="accordion footacc" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapseTwo">
+                ABOUT US
+              </button>
+            </h2>
+            <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="#">Our History</a></li>
+                  <li><a href="#">Corporate Profile</a></li>
+                  <li><a href="#">Corporate Governance</a></li>
+                  <li><a href="#">Board and Management Team</a></li>
+                  <li><a href="">Corporate Philosophy</a></li>
+                  <li><a href="#">Our Awards</a></li>
+                  <li><a href="#">Our Businesses</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseThree">
+                CAREERS
+              </button>
+            </h2>
+            <div id="collapsethree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="#">Working At Access Bank</a></li>
+                  <li><a href="#">Your Career</a></li>
+                  <li><a href="#">Recruitment Process</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                CONTACT US
+              </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="">Agent Banking Details</a></li>
+                  <li><a href="">Biometrics Enrollment</a></li>
+                  <li><a href="">Branch & ATM Locator</a></li>
+                  <li><a href="">Branches With Wi-Fi</a></li>
+                  <li><a href="">My Access</a></li>
+                  <li><a href="">We Care</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                QUICK LINKS
+              </button>
+            </h2>
+            <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="">Access Online</a></li>
+                  <li><a href="">Anti-Money Laundering</a></li>
+                  <li><a href="">Support Center</a></li>
+                  <li><a href="">Download Center</a></li>
+                  <li><a href="">Form M Rates</a></li>
+                  <li><a href="">Online Security Tips</a></li>
+                  <li><a href="">Scam Alert</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">
+                YOU ARE...
+              </button>
+            </h2>
+            <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="">An Individual</a></li>
+                  <li><a href="">A Job Applicant</a></li>
+                  <li><a href="">A Woman</a></li>
+                  <li><a href="">A Company</a></li>
+                  <li><a href="">A Journalist</a></li>
+                  <li><a href="">A Teenager</a></li>
+                  <li><a href="">An Entrepreneur</a></li>
+                  <li><a href="">An Investor</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bluefootwrap" id="footlist">
           <div>
-            <h3>ABOUT US</h3>
+            
             <ul>
+              <li><h3>ABOUT US</h3></li>
               <li><a href="#">Our History</a></li>
               <li><a href="#">Corporate Profile</a></li>
               <li><a href="#">Corporate Governance</a></li>
@@ -806,16 +1044,18 @@
             </ul>
           </div>
           <div>
-            <h3>CAREERS</h3>
+            
             <ul>
+              <li><h3>CAREERS</h3></li>
               <li><a href="#">Working At Access Bank</a></li>
               <li><a href="#">Your Career</a></li>
               <li><a href="#">Recruitment Process</a></li>
             </ul>
           </div>
           <div>
-            <h3>CONTACT US</h3>
+            
             <ul>
+              <li><h3>CONTACT US</h3></li>
               <li><a href="">Agent Banking Details</a></li>
               <li><a href="">Biometrics Enrollment</a></li>
               <li><a href="">Branch & ATM Locator</a></li>
@@ -826,8 +1066,9 @@
           </div>
           
           <div>
-            <h3>QUICK LINKS</h3>
+            
             <ul>
+              <li><h3>QUICK LINKS</h3></li>
               <li><a href="">Access Online</a></li>
               <li><a href="">Anti-Money Laundering</a></li>
               <li><a href="">Support Center</a></li>
@@ -838,8 +1079,9 @@
             </ul>
           </div>
           <div>
-            <h3>YOU ARE...</h3>
+            
             <ul>
+              <li><h3>YOU ARE...</h3></li>
               <li><a href="">An Individual</a></li>
               <li><a href="">A Job Applicant</a></li>
               <li><a href="">A Woman</a></li>
@@ -853,23 +1095,36 @@
         </div>
         <div class="contactbox">
             <div class="call">
-              <i class="fa-solid fa-phone"></i>
-              <p>+ 1-2802500,
-                07003000000</p>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p>+ 1-2802500,
+                  07003000000</p>
+              </div>
             </div>
             <div class="mobileapps">
-              <p>Access Mobile Apps</p>
+              <div>
+                <p>Access Mobile Apps</p>
+              </div>
+             <div>
               <img src="./accesshomepageimg/get-it-on-appstore.png" alt="">
               <img src="./accesshomepageimg/get-it-on-playstore.png" alt="">
+             </div>
             </div>
             <div class="social">
-              <p>We're social:</p>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-square-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
+              <div>
+                <p>We're social:</p>
+              </div>
+              <div class="socialicon">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
             </div>
         </div>
+        
       </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

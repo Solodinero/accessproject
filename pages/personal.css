@@ -74,7 +74,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
+.laptopaccessmore img{
+  width: 50px;
+}
 .box::before,
 .box::after {
   border-top: solid 4px #A4C519;
@@ -232,11 +234,17 @@ position: absolute;
     width: 70%;
     margin: 50px auto;
   }
+  
 
 }
 @media screen and (max-width: 880px){
   .communitywomen{
     padding: none;
-    height: 350px;
+    height: fit-content;
+    width: 95%;
+  }
+  .securekidchild{
+    width: 95% !important;
+    height: fit-content;
   }
 }
