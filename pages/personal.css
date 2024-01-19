@@ -75,7 +75,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 .laptopaccessmore img{
-  width: 50px;
+  width: 70%;
 }
 .box::before,
 .box::after {
@@ -246,5 +246,10 @@ position: absolute;
   .securekidchild{
     width: 95% !important;
     height: fit-content;
+  }
+}
+@media screen and (max-width: 499px){
+  .wmoveimg{
+    display: none;
   }
 }
