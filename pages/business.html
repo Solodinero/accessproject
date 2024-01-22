@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="eWWaAX58Ke0H.ico">
+    
     <title>Access bank PLC | Business</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./personal.css">
@@ -27,28 +28,110 @@
         .securekid{
             background-image: url('./images/ezt8dGI73vsQ.png');
         }
-        .cards{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            padding: 50px;
-            background-color: #014086;
-            height: 50vh
+         .cardwrap{
+            display: flex;
+            margin: auto;
+            background-color: #114c8d !important;
+            /* width: fit-content; */
+    
         }
+        .cards{
+          color: black;
+          background-color: #014086;
+          height: 120vh;
+          padding-top: 150px;
+          width: 100%;
+        }
+        .cards h3{
+          font-weight: 400;
+          color: black;
+          width: 40%;
+          margin: auto;
+          text-align: center;
+        }
+        .cards .topword p{
+          width: 50%;
+          margin:  20px auto !important;
+          color: white;
+        }
+        .topword{
+          width: 100%;
+          background-color: #114c8d;
+          height: 50vh;
+          color: white;
+          padding-top: 70px;
+        }
+        .topword h3{
+          color: #fff;
+        }
+        /*
         .cardchild{
           display: flex;
           background-color: #fff;
           margin-left: 50px;
         }
-        .cardchild div img{
+        .cardchild div:nth-of-type(1){
           height: 200px;
-          clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
         }
         .cardchild div:nth-of-type(2){
           padding: 30px;
+        } */
+        .custom-card {
+            display: flex;
+            margin: 20px;
+            overflow: hidden;
+            padding: 0 !important;
+            width: 80%;
+            border-radius: 0 !important;
+            height: 40vh;
+        }
+
+        .custom-card .card-body {
+            display: flex;
+            border-radius: none !important;
+            padding: 0 !important;
+            height: 40vh;
+
+        }
+
+        .custom-card .left-div {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 40vh;
+            width: 40%;
+            clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+            
+        }
+
+        .custom-card .right-content {
+          flex: 2;
+            margin: 25px 0;
+            margin-left: 20px;
+            width: 70%;
+        }
+
+        .custom-card h2 {
+            margin-top: 0;
+        }
+
+        .custom-card button {
+            margin-top: 10px;
+            color: #114c8d;
+            border: 2px solid #114c8d;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .card-title{
+          color: #014086;
+        }
+        .card-text{
+          color: #4B4B4B;
         }
         .expandcontain{
             background-color: rgba(0, 0, 0, 0.342); 
             background-blend-mode: overlay; 
+            overflow-x: scroll;
         }
         .expandable-container:hover {
             height: 250px; /* Expanded height to show paragraph and button */
@@ -72,6 +155,12 @@
         }
         .boxiam:hover .accessmoreappear{
           background-color: #014086; 
+        }
+        @media screen and (max-width: 898px){
+        .cardwrap{
+          flex-direction: column;
+        }
+        
         }
     </style>
 </head>
@@ -578,7 +667,6 @@
       
       <div class="expandcontain"style="background-image: url('./images/MiLegJBoCT7M.png'); background-size: cover; background-repeat: no-repeat; width: 100%;">
         <div class="expandable-container"  style="background-color: transparent; backdrop-filter: none;">
-          <div class="containerfun-icon"><img src="./accesshomepageimg/t-bills-online.svg" alt=""></div>
           <div class="containerfun-content">
             <div class="containerfun-header text-light">Mpower Biz Account <br>            
                 Designed to enable account holders to run their accounts at minimal cost and maximise other opportunities required to grow your businesses.
@@ -589,7 +677,6 @@
       </div>
       <div class="expandcontain"style="background-image: url('./images/BLT5Y3NmBhOl.png'); background-size: cover; background-repeat: no-repeat; width: 100%;">
         <div class="expandable-container"  style="background-color: transparent; backdrop-filter: none;">
-          <div class="containerfun-icon"><img src="./accesshomepageimg/t-bills-online.svg" alt=""></div>
           <div class="containerfun-content">
             <div class="containerfun-header text-light">Corporate Account<br>            
                 Offers the day-to-day services to meet your business banking needs.
@@ -600,7 +687,6 @@
       </div>
       <div class="expandcontain"  style="background-image: url('./images/q1Q2tTynMWx5.png'); background-size: cover; background-repeat: no-repeat; width: 100%;" >
         <div class="expandable-container" style="background-color: transparent; backdrop-filter: none;">
-          <div class="containerfun-icon"><img src="./accesshomepageimg/901-banking-2.svg" alt=""></div>
           <div class="containerfun-content">
             <div class="containerfun-header text-light">E-Solutions & Services <br>            
                 Explore all of our e-solutions and services here.            
@@ -612,24 +698,36 @@
       
     </div>
 
-  <setion class="cards" style="display: none;">
-    <div class="cardchild">
-        <div><img src="./images/offerings-card.png" alt=""></div>
-        <div>
-            <h4>Offerings</h4>
-            <p>Find tailor-made products and services for the different needs of our economy.</p>
-            <div class="btn-outline-primary">access more</div>
-        </div>
-    </div>
-    <div class="cardchild">
-        <div><img src="./images/loans-card.png" alt=""></div>
-        <div>
-            <h4>Offerings</h4>
-            <p>Find tailor-made products and services for the different needs of our economy.</p>
-            <div class="btn-outline-primary">access more</div>
-        </div>
-    </div>
-    </div>
+  <setion class="cards" style="background-color: #114c8d;">
+      <div class="topword">
+        <h3>Designed to add value on Micro, Small & Medium Scale Businesses</h3>
+      <p>At Access Bank, we provide working capital loans to augment cashflow and our asset financing program to purchase tools and equipment to grow your business and expand it.</p>
+      </div>
+      <div class="cardwrap">
+        <div class="card custom-card">
+          <div class="card-body">
+              <div class="left-div" style="background-image: url('./images/offerings-card.png');"></div>
+              <div class="right-content">
+                  <h5 class="card-title">Offerings</h5>
+                  <p class="card-text w-100">Find tailor-made products and services for the different needs of our economy.</p>
+                  <button class="btn btn-outline-dark">access more</button>
+              </div>
+          </div>
+      </div>
+    
+      <div class="card custom-card">
+          <div class="card-body">
+              <div class="left-div" style="background-image: url('./images/loans-card.png');"></div>
+              <div class="right-content">
+                  <h5 class="card-title">Loyalty Lending</h5>
+                  <p class="card-text w-100">Our Loyalty Lending is tailored towards rewarding long standing and good past borrowers of the bank.</p>
+                  <button class="btn btn-outline-dark">access more</button>
+              </div>
+          </div>
+      </div>
+      </div>
+
+    
   </setion>
   <section class="securekid">
     <div style=" width: 50%;" class="securekidchild">
